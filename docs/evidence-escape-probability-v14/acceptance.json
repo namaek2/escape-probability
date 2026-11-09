@@ -1,0 +1,62 @@
+{
+  "version": 14,
+  "status": "passed",
+  "core_tests": {
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "native_input": {
+    "seed": 431,
+    "stages_observed": [
+      1,
+      2,
+      3
+    ],
+    "shops": 2,
+    "third_stage_fragile_collapse_observed": true,
+    "multi_floor_drop": 8,
+    "death_cause": "ROULETTE",
+    "sample": 0.9547270344141925,
+    "survival_probability": 0.022528399544939195,
+    "campaign_complete": false,
+    "forced_state_or_outcomes": false
+  },
+  "focus_pause": {
+    "native_small_window": true,
+    "regaining_focus_keeps_paused": true,
+    "explicit_resume": true
+  },
+  "video": {
+    "file": "escape-probability-v14-demo-60s.mp4",
+    "width": 1280,
+    "height": 800,
+    "seconds": 60,
+    "fps": 30,
+    "frames": 1800,
+    "full_decode": "passed",
+    "sha256": "700a662fb9af617193fa55c2723809486a16efdcccceb025401ed20dfa4dc20b",
+    "bytes": 3789188,
+    "last_12_seconds_speed": 0.5
+  },
+  "jar": {
+    "old_sha256": "827b06211514edf2bfb0e8d0cbd9db22e5a65d701fb3358ea50a402b431cf86f",
+    "final_sha256": "bb04ac36673dad610e251cfabf888409c39ceb86cbb434f0b86efeab333d1df4",
+    "changed_entries": [
+      "pixel-v10/manifest.json"
+    ],
+    "all_executable_classes_and_visual_assets_identical": true
+  },
+  "distribution": {
+    "extracted_launcher_from_unrelated_cwd": "passed",
+    "runtime_file_count": 71,
+    "crc_and_source_bytes": "passed"
+  },
+  "limits": [
+    "Linux software rendering with automated input",
+    "Windows/macOS not exercised",
+    "Not a human playtest",
+    "No final stage full clear in this footage"
+  ]
+}

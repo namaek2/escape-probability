@@ -1,0 +1,264 @@
+atlas.png
+size: 512,384
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+elder-idle
+  rotate: false
+  xy: 0, 0
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+elder-walk
+  rotate: false
+  xy: 64, 0
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+elder-air
+  rotate: false
+  xy: 128, 0
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+elder-dead
+  rotate: false
+  xy: 192, 0
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+boiler-idle
+  rotate: false
+  xy: 256, 0
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+boiler-tell
+  rotate: false
+  xy: 320, 0
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+boiler-attack
+  rotate: false
+  xy: 384, 0
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+boiler-recovery
+  rotate: false
+  xy: 448, 0
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+boiler-hit
+  rotate: false
+  xy: 0, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+boiler-dead
+  rotate: false
+  xy: 64, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-idle
+  rotate: false
+  xy: 128, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-tell
+  rotate: false
+  xy: 192, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-attack
+  rotate: false
+  xy: 256, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-recovery
+  rotate: false
+  xy: 320, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-hit
+  rotate: false
+  xy: 384, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+frost-dead
+  rotate: false
+  xy: 448, 64
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+tile-0
+  rotate: false
+  xy: 0, 128
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+tile-1
+  rotate: false
+  xy: 64, 128
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+tile-2
+  rotate: false
+  xy: 128, 128
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+background-0
+  rotate: false
+  xy: 192, 128
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+background-1
+  rotate: false
+  xy: 256, 128
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+background-2
+  rotate: false
+  xy: 320, 128
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+cushion
+  rotate: false
+  xy: 384, 128
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+flower
+  rotate: false
+  xy: 448, 128
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+coffee
+  rotate: false
+  xy: 0, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+shoes
+  rotate: false
+  xy: 64, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+clock
+  rotate: false
+  xy: 128, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+flame0
+  rotate: false
+  xy: 192, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+flame1
+  rotate: false
+  xy: 256, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+shard
+  rotate: false
+  xy: 320, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+impact
+  rotate: false
+  xy: 384, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+fern
+  rotate: false
+  xy: 448, 192
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+pipe
+  rotate: false
+  xy: 0, 256
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+crystal
+  rotate: false
+  xy: 64, 256
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+flag
+  rotate: false
+  xy: 128, 256
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+route-gold
+  rotate: false
+  xy: 192, 256
+  size: 32, 2
+  orig: 32, 2
+  offset: 0, 0
+  index: -1
+route-cyan
+  rotate: false
+  xy: 256, 256
+  size: 32, 2
+  orig: 32, 2
+  offset: 0, 0
+  index: -1

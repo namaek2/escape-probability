@@ -1,0 +1,3 @@
+# Pixel v10 project art
+Original project pixel art and original 5x7 glyph patterns authored for Roulette Runner v10 using a local Pillow drawing script (no downloaded images, no resampling of v9 art). Atlas 512x384 RGBA; sprites 24x24, elder 32x36, bosses 48x64, tiles 32x32, backgrounds 64x64. Transparent edges; 16 opaque palette entries; nearest filtering. Two/three-shade material ramps share dark ink outlines. Font sheet 128x64 RGBA, ASCII lowercase aliases uppercase. Roulette is original runtime 5-unit pixel-cell geometry, not a framebuffer filter.
+Existing Kenney v9 files and their CC0 attribution are unchanged and remain separate. This provenance applies only to pixel-v10 assets, not the whole game.

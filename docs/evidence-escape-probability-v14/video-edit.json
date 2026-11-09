@@ -1,0 +1,99 @@
+{
+  "source": "raw.mp4",
+  "automated_input": true,
+  "seed": 431,
+  "duration": 60,
+  "fps": 30,
+  "segments": [
+    {
+      "name": "title",
+      "output_start": 0,
+      "output_end": 3,
+      "source_start": 0.6,
+      "source_duration": 3.0,
+      "playback_speed": 1.0,
+      "caption": "escape probability — 확률을 건 빌딩 탈출",
+      "frames": 90
+    },
+    {
+      "name": "stage1",
+      "output_start": 3,
+      "output_end": 10,
+      "source_start": 3.7,
+      "source_duration": 7.0,
+      "playback_speed": 1.0,
+      "caption": "1단계 · 10층｜이동·점프, 짧은 착지로 위험을 줄인다",
+      "frames": 210
+    },
+    {
+      "name": "shop1",
+      "output_start": 10,
+      "output_end": 15,
+      "source_start": 20.7,
+      "source_duration": 5.0,
+      "playback_speed": 1.0,
+      "caption": "지상 탈출 → 상점｜코인으로 아이템을 사고 다음 건물로",
+      "frames": 150
+    },
+    {
+      "name": "stage2",
+      "output_start": 15,
+      "output_end": 28,
+      "source_start": 26.7,
+      "source_duration": 13.0,
+      "playback_speed": 1.0,
+      "caption": "2단계 · 20층｜화염을 피해 발판을 골라 내려간다",
+      "frames": 390
+    },
+    {
+      "name": "next30",
+      "output_start": 28,
+      "output_end": 33,
+      "source_start": 59.2,
+      "source_duration": 5.0,
+      "playback_speed": 1.0,
+      "caption": "20층 탈출 → 30층 건물｜각 단계는 새로운 옥상에서",
+      "frames": 150
+    },
+    {
+      "name": "stage3",
+      "output_start": 33,
+      "output_end": 48,
+      "source_start": 65,
+      "source_duration": 15.0,
+      "playback_speed": 1.0,
+      "caption": "3단계 · 30층｜화염 + 무너지는 발판 + 시야를 가리는 연기",
+      "frames": 450
+    },
+    {
+      "name": "longfall",
+      "output_start": 48,
+      "output_end": 54,
+      "source_start": 81.4,
+      "source_duration": 3.0,
+      "playback_speed": 0.5,
+      "caption": "발판을 건너뛴 선택 — 8층을 한 번에 추락",
+      "frames": 180
+    },
+    {
+      "name": "roulette-death",
+      "output_start": 54,
+      "output_end": 58,
+      "source_start": 84.4,
+      "source_duration": 2.0,
+      "playback_speed": 0.5,
+      "caption": "생존 2.25% · 사망 97.75% — 실제 룰렛 결과 DEAD",
+      "frames": 120
+    },
+    {
+      "name": "retry",
+      "output_start": 58,
+      "output_end": 60,
+      "source_start": 86.4,
+      "source_duration": 1.0,
+      "playback_speed": 0.5,
+      "caption": "사망하면 현재 건물의 옥상에서 다시 도전",
+      "frames": 60
+    }
+  ]
+}

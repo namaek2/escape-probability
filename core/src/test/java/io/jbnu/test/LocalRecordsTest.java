@@ -1,0 +1,18 @@
+package io.jbnu.test;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+
+/** Legacy bytes are read defensively but descent never writes any v1 bucket. */
+public class LocalRecordsTest {
+ static Path directory()throws Exception{return Files.createTempDirectory(Paths.get(System.getProperty("roulette.dataDir")),"records-test-");}
+ static GameRules completed(){GameRules g=DescentTest.ready(new DescentTest.Counting(0));for(int i=0;i<3;i++){DescentTest.section(g);if(i<2)g.leaveShop();}return g;}
+ @Test public void neitherIncompleteNorCompletedDescentWrites()throws Exception{Path dir=directory();LocalRecords r=new LocalRecords(dir);assertFalse(r.complete(new GameRules(4)));assertFalse(r.complete(completed()));try(DirectoryStream<Path> entries=Files.newDirectoryStream(dir)){assertFalse(entries.iterator().hasNext());}}
+ @Test public void legacyBucketsAndBytesRemainUnchanged()throws Exception{Path dir=directory(),file=dir.resolve("records-v1.properties");byte[] bytes="version=1\n4=1,500,0\n2=20,3,4\n3=30,2,5\nMIXED=40,1,6\n".getBytes(StandardCharsets.UTF_8);Files.write(file,bytes);LocalRecords r=new LocalRecords(dir);assertEquals("LOADED",r.status());assertFalse(r.complete(completed()));assertArrayEquals(bytes,Files.readAllBytes(file));assertArrayEquals(new double[]{20,3,4},r.best("2"),0);double[] copy=r.best("2");copy[0]=999;assertEquals(20,r.best("2")[0],0);}
+ @Test public void malformedBytesPreservedAndNoRecoveryWrite()throws Exception{for(String bad:new String[]{"version=2\n4=1,0,0","version=1\n4=NaN,0,0","version=1\n4=1,-1,0","version=1\n4=1,0,1.5","version=1\nextra=1","version=1\n4=1,0,0,0","version=1\n4=Infinity,0,0","version=1\n4=1,2147483648,0","version=1\n4=\\uZZZZ"}){Path dir=directory(),file=dir.resolve("records-v1.properties");byte[] bytes=bad.getBytes(StandardCharsets.UTF_8);Files.write(file,bytes);LocalRecords r=new LocalRecords(dir);assertNull(r.best("4"));assertEquals("CORRUPT_PRESERVED_PENDING",r.status());assertFalse(r.complete(completed()));assertArrayEquals(bytes,Files.readAllBytes(file));}}
+ @Test public void inaccessiblePathDoesNotDestroyBytes()throws Exception{Path file=directory().resolve("not-directory");byte[] bytes={1,2,3};Files.write(file,bytes);assertFalse(new LocalRecords(file).complete(completed()));assertArrayEquals(bytes,Files.readAllBytes(file));}
+ @Test public void readLimitBoundaryAndOversize()throws Exception{for(int size:new int[]{65536,65537}){Path dir=directory(),file=dir.resolve("records-v1.properties");byte[] bytes=new byte[size];Arrays.fill(bytes,(byte)'x');byte[] header="version=1\n4=1,2,3\n#".getBytes(StandardCharsets.UTF_8);System.arraycopy(header,0,bytes,0,header.length);Files.write(file,bytes);LocalRecords r=new LocalRecords(dir);assertEquals(size==65536?"LOADED":"UNREADABLE",r.status());if(size==65536)assertArrayEquals(new double[]{1,2,3},r.best("4"),0);else assertNull(r.best("4"));assertFalse(r.complete(completed()));assertArrayEquals(bytes,Files.readAllBytes(file));try(DirectoryStream<Path> entries=Files.newDirectoryStream(dir)){Iterator<Path> it=entries.iterator();assertEquals(file,it.next());assertFalse(it.hasNext());}}}
+ @Test public void unreadableRecordDirectoryPreserved()throws Exception{Path dir=directory(),file=Files.createDirectory(dir.resolve("records-v1.properties"));Path marker=file.resolve("fixture");byte[] bytes={1,2,3};Files.write(marker,bytes);LocalRecords r=new LocalRecords(dir);assertEquals("UNREADABLE",r.status());assertFalse(r.complete(completed()));assertArrayEquals(bytes,Files.readAllBytes(marker));}
+}

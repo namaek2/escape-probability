@@ -1,0 +1,37 @@
+{
+  "palette": {
+    "ink": "#172738",
+    "deep": "#203c43",
+    "green": "#397865",
+    "mint": "#79b889",
+    "light": "#d9e5bc",
+    "cream": "#fff3d9",
+    "red": "#b83d52",
+    "pink": "#ed7780",
+    "blue": "#426b98",
+    "cyan": "#86cbd2",
+    "ice": "#c5e5e5",
+    "rust": "#794a3c",
+    "copper": "#ba7950",
+    "gold": "#e8b76a",
+    "skin": "#dfae83",
+    "white": "#f5eddf"
+  },
+  "atlas": [
+    512,
+    384
+  ],
+  "font": [
+    128,
+    64
+  ],
+  "files": {
+    "atlas.atlas": "f14c79f592d67a5bf8c8a65f938d34b8ffd1f7402cd240084a21cc8a71d916d3",
+    "LICENSE.txt": "1a2e36fb54196f5a1a03f2e460989a06cc53faf610d640da327abab7fc56964c",
+    "font.png": "3726db78c10d74bedb53e4aedeae17ac715dc39b9da28940943deba1b817cb6d",
+    "PROVENANCE.md": "02e26bde6c0023c6f2e808132daf5e5f672963732ab2e175e2b89d04733eae35",
+    "font.fnt": "636e60518fb6604662ca6d9c804b41940f4865eb02abdeb9789ce92b45e5e2ef",
+    "atlas.png": "aede85cbfb6c4aa383f57b4e05f4095328280e799f31e97a30d62a5c95a9ccd1"
+  },
+  "regions": 37
+}

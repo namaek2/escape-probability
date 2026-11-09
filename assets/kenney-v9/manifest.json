@@ -1,0 +1,46 @@
+{
+  "author": "Kenney",
+  "version": "New Platformer Pack 1.1",
+  "source": "https://kenney.nl/assets/new-platformer-pack",
+  "license": "CC0 1.0",
+  "archive_sha256": "553b907f3f0e505ab65f56f245ccaff3123c8fe3f3a0dfce9373b996bfc18cc2",
+  "license_sha256": "f0bc5a99a4710f75a2d507e2ab153025af203d9a6b5a698df737a47684316077",
+  "files": [
+    {
+      "file": "terrain_grass_block_top.png",
+      "original": "Sprites/Tiles/Double/terrain_grass_block_top.png",
+      "sha256": "4f3966fb8449e75ae284fdd78befb23fb9e1c7e15a27b6a0b88c6bea412fc864",
+      "render": "Full 128x128 top tile scaled 64x64; partial last tile cropped in X. Thin ledges crop source top16px scaled to8px. White tint, top exactly collider; vector edge overlay2px"
+    },
+    {
+      "file": "terrain_stone_block_top.png",
+      "original": "Sprites/Tiles/Double/terrain_stone_block_top.png",
+      "sha256": "a40a0b4c50947b126ac9230a5fa1411ad469675d75a00a99e8edc56672c80adb",
+      "render": "Full 128x128 top tile scaled 64x64; partial last tile cropped in X. Thin ledges crop source top16px scaled to8px. White tint, top exactly collider; vector edge overlay2px"
+    },
+    {
+      "file": "terrain_snow_block_top.png",
+      "original": "Sprites/Tiles/Double/terrain_snow_block_top.png",
+      "sha256": "b494467aba8134e5bdb84f85f682fea737ccf89ddeac2b19fb566eaaebd83be8",
+      "render": "Full 128x128 top tile scaled 64x64; partial last tile cropped in X. Thin ledges crop source top16px scaled to8px. White tint, top exactly collider; vector edge overlay2px"
+    },
+    {
+      "file": "chain.png",
+      "original": "Sprites/Tiles/Double/chain.png",
+      "sha256": "99292f7941c3b367ce2a2698c3d5b3cf4002fc121da2607a225f4745b1073900",
+      "render": "Full opaque image scaled 24x120, tint .60,.45,.30; repeated copper background below y400"
+    },
+    {
+      "file": "background_fade_trees.png",
+      "original": "Sprites/Backgrounds/Double/background_fade_trees.png",
+      "sha256": "e88852efe2e5e92c9178b4b02fad785940defeb92d1def0f6d1b5cbd03ca2d39",
+      "render": "Full opaque image scaled 384x300 at world y0, tint .40,.55,.55 forest or .55,.65,.85 ice; x parallax .16; below y400"
+    },
+    {
+      "file": "background_fade_hills.png",
+      "original": "Sprites/Backgrounds/Double/background_fade_hills.png",
+      "sha256": "afcf41aa5f87008f2c78e7d43bc700336e5392b881a1a9b8a0dfebee9ab39020",
+      "render": "Full opaque image scaled 384x300 at world y0, tint .40,.55,.55 forest or .55,.65,.85 ice; x parallax .16; below y400"
+    }
+  ]
+}
